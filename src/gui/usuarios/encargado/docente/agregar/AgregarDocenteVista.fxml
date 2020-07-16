@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="605.0" styleClass="background" stylesheets="@../../../../recursos/card/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="525.0" prefWidth="591.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="66.0" prefWidth="427.0">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Prototipo%20de%20diseño%20y%20construccion/PracticasProfesionales/src/org/gui/auth/resources/images/logouv.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="533.0" prefWidth="533.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="44.0" prefWidth="619.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="422.0" styleClass="firstLevelLabel" text="Registrar docente" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gill Sans" size="31.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="firstLevelLabel" text="Información de docente">
+                           <font>
+                              <Font name="Open Sans Light" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="57.0" spacing="5.0">
+                     <children>
+                        <Label text="NOMBRE" />
+                        <TextField fx:id="nombreTextField" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" promptText="e.g Roberto Noble">
+                           <tooltip>
+                              <Tooltip id="tooltip" maxWidth="200.0" text="No debe contener carácteres extraños por ejemplo: !&quot;$%&amp;. Ni un espacio en blanco al final." textAlignment="JUSTIFY" wrapText="true" />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="57.0" spacing="5.0">
+                     <children>
+                        <Label text="FECHA NACIMIENTO" />
+                        <DatePicker fx:id="fechaNacimientoTextField" minHeight="35.0" prefHeight="42.0" prefWidth="463.0" promptText="Selecciona una fecha de nacimiento" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="57.0" spacing="5.0">
+                     <children>
+                        <Label text="NUMERO DE PERSONAL" />
+                        <TextField fx:id="numeroPersonalTextField" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" promptText="e.g A1">
+                           <tooltip>
+                              <Tooltip id="tooltip" maxWidth="200.0" text="No debe contener carácteres extraños por ejemplo: !&quot;$%&amp;. Ni un espacio en blanco al final." textAlignment="JUSTIFY" wrapText="true" />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="57.0" spacing="5.0">
+                     <children>
+                        <Label text="RFC" />
+                        <TextField fx:id="rfcTextField" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0">
+                           <tooltip>
+                              <Tooltip id="tooltip" maxWidth="200.0" text="No debe contener carácteres extraños por ejemplo: !&quot;$%&amp;. Ni un espacio en blanco al final." textAlignment="JUSTIFY" wrapText="true" />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="35.0">
+                     <children>
+                        <VBox prefHeight="56.0" prefWidth="230.0" spacing="5.0">
+                           <children>
+                              <Label text="PERFIL PROFESIONAL" />
+                              <ComboBox fx:id="perfilProfesionalComboBox" prefHeight="35.0" prefWidth="230.0" styleClass="choiceBox" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="10.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="AÑOS EXPERIENCIA" />
+                              <TextField fx:id="anosExperienciaTextField" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" promptText="e.g 15">
+                                 <tooltip>
+                                    <Tooltip id="tooltip" maxWidth="200.0" text="No debe contener carácteres extraños por ejemplo: !&quot;$%&amp;. Ni un espacio en blanco al final." textAlignment="JUSTIFY" wrapText="true" />
+                                 </tooltip>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label styleClass="firstLevelLabel" text="Información de contacto">
+                     <font>
+                        <Font name="Open Sans Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" />
+                  <VBox alignment="CENTER_LEFT" prefHeight="57.0" spacing="5.0">
+                     <children>
+                        <Label text="CORREO ELECTRÓNICO" />
+                        <TextField fx:id="correoTextField" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" promptText="e.g university@gmail.com">
+                           <tooltip>
+                              <Tooltip id="tooltip" maxWidth="200.0" text="No debe contener carácteres extraños por ejemplo: !&quot;$%&amp;. Ni un espacio en blanco al final." textAlignment="JUSTIFY" wrapText="true" />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <Label fx:id="systemLabel" alignment="BOTTOM_CENTER" prefHeight="17.0" prefWidth="490.0" styleClass="systemLabel" textAlignment="CENTER" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="427.0" spacing="10.0">
+               <children>
+                  <Button maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#registrarBotonPresionado" prefHeight="42.0" prefWidth="484.0" styleClass="firstLevelButton" text="Registrar" textAlignment="CENTER" wrapText="true" />
+                  <Button mnemonicParsing="false" onAction="#cancelarBotonPresionado" prefHeight="21.0" styleClass="withoutOutLineButton" text="Cancelar">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="35.0" right="35.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

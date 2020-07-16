@@ -1,0 +1,123 @@
+.tooltip {
+  -fx-background: rgba(30,30,30);
+  -fx-text-fill: white;
+  -fx-background-color: rgba(30,30,30,0.8);
+  -fx-max-width:100;
+  -fx-min-width:100;
+  -fx-pref-width:100;
+}
+
+.firstLevelLabel {
+  -fx-text-fill:#000000;
+  -fx-font-familiy:"Gill Sans";
+}
+
+.secondLevelLabel {
+  -fx-text-fill:#a8a8a8;
+}
+
+.thirdLevelLabel {
+  -fx-text-fill:#aaaaaa;
+}
+
+.lastLevelLabel {
+  -fx-text-fill:#b5b4b4;
+}
+
+.systemLabel {
+  -fx-text-fill:#ff0000;
+}
+
+.recoveryLabel {
+  -fx-text-fill:#a5a4a4;
+}
+
+.recoveryLabel:hover {
+  -fx-text-fill:#6F4CBB;
+}
+
+.boxBorder {
+  -fx-border-color:#989FA6;
+  -fx-border-width:1 1 1 1;
+  -fx-border-radius:3px;
+  -fx-background-color:#F9F9F9;
+}
+
+.firstLevelButton {
+  -fx-background-color:#3CAEF7;
+  -fx-text-fill:#ffffff;
+  -fx-border-color:#176ded;
+  -fx-border-radius:2px;
+  -fx-font-family:"Montserrat Light";
+}
+
+.withBorderButton {
+  -fx-background-color:#F9F9F9;
+  -fx-border-color:#8a8a8a;
+  -fx-border-width:1 1 1 1;
+  -fx-border-radius:3px;
+}
+
+.withBorderButton:hover {
+  -fx-background-color:#efefef;
+}
+
+
+.withoutOutLineButton {
+  -fx-background-color:transparent;
+  -fx-text-fill:#8a8a8a;
+}
+
+.firstLevelButton:hover {
+  -fx-background-color:#4b92fc;
+}
+
+.lastLevelButton {
+  -fx-background-color:#F8F8F8;
+  -fx-text-fill:#8a8a8a;
+  -fx-border-width: 1 1 1 1;
+  -fx-border-color:#B0B0B0;
+  -fx-border-radius:2px;
+}
+
+.lastLevelButton:hover {
+  -fx-border-color:#898989;
+}
+
+.background {
+  -fx-background-color:#ffffff;
+  -fx-background-radius:3px;
+  -fx-border-radius: 3px;
+  -fx-border-color:#323232;
+  -fx-border-width:1 1 1 1;
+}
+
+.windowTitle {
+  -fx-background-color:#F9F9F9;
+  -fx-background-radius:0 3 3 0;
+  -fx-border-color:#323232;
+  -fx-border-radius:0 3 3 0;
+  -fx-border-width:0.5px;
+  -fx-text-fill:#323232;
+  -fx-font-family:"Montserrat Light";
+}
+
+.wrongTextField {
+  -fx-background-color:red;
+  -fx-fill:red;
+}
+
+.wrongTextField .content {
+  -fx-background-color:red;
+}
+
+.correctlyTextField {
+  -fx-background-color:green;
+  -fx-fill:green;
+}
+
+.correctlyTextField .content {
+  -fx-background-color:green;
+  -fx-fill:green;
+}
+
