@@ -8,17 +8,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-//        LoginController loginController = new LoginController();
-//        loginController.showStage();
-
-        PrincipalDirectivoController principalDirectivoController = new PrincipalDirectivoController();
-        principalDirectivoController.showStage();
-
-//        List<Actividad> actividadList = new ActividadDAO().obtenerTodosPorTema(1);
-//        for (Actividad actividad : actividadList) {
-//            System.out.println(actividad);
-//        }
-
+        LoginController loginController = new LoginController();
+        loginController.showStage();
 
     }
 
